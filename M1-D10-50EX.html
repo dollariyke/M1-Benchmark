@@ -304,7 +304,6 @@
       var maxArrayVal = randomArray.reduce(function (a, b) {
         return Math.max(a, b);
       });
-      console.log(max);
 
       var minArrayVal = randomArray.reduce(function (a, b) {
         return Math.min(a, b);
@@ -317,7 +316,7 @@
         let innerArray = [];
         for (let j = 0; j < 10; j++)
           innerArray.push(Math.floor(Math.random() * 10));
-        arrMain.push(current);
+        arrMain.push(innerArray);
       }
       console.log(arrMain);
 
@@ -335,8 +334,6 @@
 
       console.log(compareArrLength(arr2, arr1));
 
-      let arr1 = [1, 2, 3, 4, 5];
-      let arr2 = [3, 5, 9, 8];
       const compareArrSum = (arrM, arrN) => {
         let sum = 0;
         let sum2 = 0;
@@ -363,6 +360,36 @@
           console.log(tableData[i].innerText);
         }
       };
+
+      const headingChange = () => {
+        let heading = document.querySelector("h1");
+        heading.innerText = "The bags online shop";
+      };
+
+      const extraRow = () => {
+        let newtable = document.querySelector("table");
+        let tbody = document.querySelector("tbody");
+        let tr = document.createElement("tr");
+        tbody.appendChild(tr);
+      };
+      extraRow();
+
+      const addClassToRow = () => {
+        let tr = document.querySelectorAll("tr");
+        tr.className = "test";
+        console.log(tr);
+      };
+
+      addClassToRow();
+
+      const addbackgroundToLink = () => {
+        let a = document.getElementsByName("a");
+        for (let i = 0; i < a.length; i++) {
+          a[i].style.backgroundColor = "red";
+        }
+      };
+
+      addbackgroundToLink();
     </script>
   </body>
 </html>
