@@ -1,10 +1,15 @@
+* setting google fonts using the @import*/
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 /*11) Give a maximum width to the body and center it in the page*/
-    *{ box-sizing: border-box;   
-         margin: 0;     
-         padding: 0;    
-        font-size: 62.5%;    
-        ont-family: "Nova Square", cursive;  
-     }
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Nova Square", cursive;
+    }
+
 body {
   max-width: 100%;
   margin: 0 auto;
