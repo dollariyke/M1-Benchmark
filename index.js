@@ -57,7 +57,7 @@ console.log(minArrayVal);
 let arrMain = [];
 for (let i = 0; i < 4; i++) {
   let innerArray = [];
-  for (let j = 0; j < 10; j++) innerArray.push(Math.floor(Math.random() * 10));
+  for (let j = 0; j < 10; j++) innerArray.push(Math.floor(Math.random() * 10 +1));
   arrMain.push(innerArray);
 }
 console.log(arrMain);
@@ -115,7 +115,6 @@ const headingChange = () => {
   };
   headingChange();
 
-
 //35) Write a function to add an extra row to the table 
 const extraRow = () => {
   let newtable = document.querySelector("table");
@@ -124,7 +123,6 @@ const extraRow = () => {
   tbody.appendChild(tr);
 };
 extraRow();
-
 
 
 //36) Write a function to add the class "test" to each row in the table
@@ -156,15 +154,7 @@ const emptyList = () => {
 };
 
     
-    31) Get element with ID "container" from the page 
-    32) Get every "td" from the page 
-    33) Create a cycle that prints the text inside every td of the page 
-    34) Write a function to change the heading of the page 
-    35) Write a function to add an extra row to the table 
-    36) Write a function to add the class "test" to each row in the table
-     
-  
-    39) Write a function to add new items to a UL 
+ 
     
     41) Add an eventListener to alert when the mouse is over a link, displaying the URL 
     42)Add a button to hide every image on the page 
